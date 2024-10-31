@@ -9,6 +9,8 @@ class Program
         Console.WriteLine("choose 2 for ArithmaticOpration");
         Console.WriteLine("choose 3 for Calculation");
         Console.WriteLine("Choose 4 for Performing opration using ternary");
+        Console.WriteLine("Choose 5 for Days Conversion");
+        Console.WriteLine("Choose 6 for array Opration");
         string userInput = Console.ReadLine();
 
         switch (userInput)
@@ -29,9 +31,17 @@ class Program
                 Console.WriteLine("You Choose TernaryOpration");
                 CSharp.OprationUsingTernary.TernaryOpration.Run(args);
                 break;
-            default:
-                Console.WriteLine("Invalid choice. Please choose 1 or 2.");
+                case "5":
+                Console.WriteLine("You Choose Days Conversion Into year week and days");
+                CSharp.ConvertDaysIntoWeekDaysAndYear.ConvertDaysIntoWeekDaysAndYear.Run(args);
                 break;
+                 case "6":
+                Console.WriteLine("You choose ArrayOpration");
+                CSharp.ArrayOperation.ArrayOperation.Run(args);
+                break;
+                default:
+                    Console.WriteLine("Invalid choice. Please choose 1 or 2.");
+                    break;
         }
     }
 }
