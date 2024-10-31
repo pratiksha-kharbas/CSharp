@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CSharp.BasicDataTypeIO
+namespace CSharp.ArithmaticOpration
 {
     /// <summary>
     /// Performing Arithamatic Oprations
@@ -14,7 +14,7 @@ namespace CSharp.BasicDataTypeIO
             Console.WriteLine("Enter Second Number:");
             double number2 = Convert.ToDouble(Console.ReadLine());
 
-           while (true)
+            while (true)
             {
                 Console.WriteLine("1 for Addition");
                 Console.WriteLine("2 for Subtraction");
@@ -27,7 +27,6 @@ namespace CSharp.BasicDataTypeIO
                 switch (userInput)//used switch case here
                 {
                     case "1":
-
                         var AdditionResult = number1 + number2;
                         Console.WriteLine("1 Addition " + AdditionResult);
                         break;
@@ -38,7 +37,7 @@ namespace CSharp.BasicDataTypeIO
                         break;
 
                     case "3":
-                        var MultiplicationResult = number1 * number2; 
+                        var MultiplicationResult = number1 * number2;
                         Console.WriteLine("3.Multiplication " + MultiplicationResult);
                         break;
 
@@ -54,21 +53,19 @@ namespace CSharp.BasicDataTypeIO
                         }
                         break;
 
-                        case "5":
+                    case "5":
                         Console.WriteLine("Exiting Program");
                         return;
-                       
 
                     default:
                         Console.WriteLine("Invalid input. Please enter a number from 1 to 4.");
                         break;
                 }
-
             }
         }
         public static void Run(string[] args)
         {
-            ArithmeticOperation.Operations();
+            Operations();
         }
     }
 }
