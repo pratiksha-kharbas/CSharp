@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace CSharp.ExceptionHandlingProgram
 {
     // Custom exception class
@@ -10,7 +9,7 @@ namespace CSharp.ExceptionHandlingProgram
 
     class ExceptionHandling
     {
-        public static void Main(string[] args)
+        public static void Run(string[] args)
         {
             try
             {
@@ -22,7 +21,7 @@ namespace CSharp.ExceptionHandlingProgram
                 int denominator = int.Parse(Console.ReadLine());
 
                 // Check for custom exception condition (negative values)
-                if (numerator < 0 || denominator < 0)
+                if (numerator == 0)
                 {
                     throw new UserException("Numerator and Denominator should be non-negative.");
                 }

@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 namespace CSharp.InterfaceAndAbstractClass
 {
     //  the IMovable interface 
@@ -47,10 +47,10 @@ namespace CSharp.InterfaceAndAbstractClass
 
     class Program
     {
-        static void Main(string[] args)
+        public static void Run(string[] args)
         {
 
-            IMovable car = new Car("BMW");
+            Car car = new Car("BMW");
             car.Move();
 
             Bicycle bicycle = new Bicycle("Mountain Bike");
