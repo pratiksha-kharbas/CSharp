@@ -61,11 +61,11 @@ class Program
                     break;
                  case "10":
                     Console.WriteLine("You Choose linq");
-                    CSharp.LinqBasicOperations.Program.Run(args);
+                CSharp.LinqBasicOperations.Program.Run(args);   
                     break;
                  case "11":
                     Console.WriteLine("You choose delegates");
-                    CSharp.Delgates.Program.Run(args);
+                CSharp.Delgates.Program.Run(args);
                      break;
                   default:
                      Console.WriteLine("Invalid choice. Please choose 1 or 2.");

@@ -47,6 +47,7 @@ namespace CSharp.Delgates
             Console.WriteLine("Multiplication: 10 * 5 = " + multiply(10, 5));
             Console.WriteLine("Division: 10 / 5 = " + divide(10, 5));
             Console.WriteLine("Division by zero: 10 / 0 = " + divide(10, 0));
+            Console.ReadLine();
         }
     }
 }
