@@ -15,6 +15,10 @@ class Program
         Console.WriteLine("Choose 7 for Exception Handling Code");
         Console.WriteLine("Choose 8 for Interface and abstract class code");
         Console.WriteLine("Choose 9 for List And Dictionary Opration");
+        Console.WriteLine("Choose 10 for LINQ");
+        Console.WriteLine("Choose 11 for Delegates Program");
+
+
         string userInput = Console.ReadLine();
 
         switch (userInput)
@@ -55,7 +59,15 @@ class Program
                     Console.WriteLine("You Choose List and Dictionary Opration");
                     CSharp.CrudOprationOnList.CrudOprationOnList.Run(args);
                     break;
-                 default:
+                 case "10":
+                    Console.WriteLine("You Choose linq");
+                CSharp.LinqBasicOperations.Program.Run(args);   
+                    break;
+                 case "11":
+                    Console.WriteLine("You choose delegates");
+                CSharp.Delgates.Program.Run(args);
+                     break;
+                  default:
                      Console.WriteLine("Invalid choice. Please choose 1 or 2.");
                      break;
         }
